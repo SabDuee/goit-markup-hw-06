@@ -576,6 +576,7 @@ footer {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  font-weight: 700;
 }
 .social-box-item {
   display: flex;
@@ -775,9 +776,6 @@ button {
   display: flex;
 }
 
-.social-box-title {
-  font-weight: 700;
-}
 .modal-button:hover,
 .modal-button:focus {
   fill: #2196f3;
