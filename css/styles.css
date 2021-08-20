@@ -712,10 +712,9 @@ footer {
 }
 
 .modal-svg {
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-top: 9px;
-  padding-right: 9px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
 }
 button {
   cursor: pointer;
