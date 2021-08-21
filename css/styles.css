@@ -630,10 +630,12 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-work-link:hover .product-thumb-container {
+.portfolio-work-link:hover .product-thumb-container,
+.portfolio-work-link:focus .product-thumb-container {
   transform: translateY(0);
 }
 .portfolio-work-link {
+  display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
@@ -918,7 +920,20 @@ textarea {
   margin-right: 7px;
 }
 
-.form-modal-checkbox:checked ~ .checkbox-icon {
+.checkbox-modal-icon:checked {
+  display: block;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  background-color: #fff;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 1em;
+}
+
+.form-modal-checkbox:checked + .checkbox-icon {
   background-color: #2196f3;
   border: 2px solid #2196f3;
   background-size: contain;
