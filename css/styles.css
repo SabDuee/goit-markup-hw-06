@@ -907,7 +907,7 @@ textarea {
 .form-modal-checkbox {
   appearance: none;
 }
-.form-modal-checkbox:checked .checkbox-icon {
+.form-modal-checkbox:checked + .checkbox-icon {
   background-color: var(--color-hover--);
   border: 2px solid var(--color-hover--);
   background-size: contain;
