@@ -34,6 +34,16 @@ img {
   width: 100%;
   height: auto;
 }
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
 
 .container {
   width: 1200px;
@@ -891,13 +901,17 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .form-modal-checkbox {
   appearance: none;
-  position: absolute;
 }
-
+.form-modal-checkbox:checked .checkbox-icon {
+  background-color: var(--color-hover--);
+  border: 2px solid var(--color-hover--);
+  background-size: contain;
+}
 .checkbox-text {
   font-size: 14px;
   line-height: 1.71;
@@ -918,25 +932,6 @@ textarea {
   height: 15px;
   margin: 0;
   margin-right: 7px;
-}
-
-.checkbox-modal-icon:checked {
-  display: block;
-  border-radius: 2px;
-  border: 2px solid #212121;
-  background-color: #fff;
-  background-image: url(../images/check.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 1em;
-  height: 1em;
-}
-
-.form-modal-checkbox:checked + .checkbox-icon {
-  background-color: #2196f3;
-  border: 2px solid #2196f3;
-  background-size: contain;
 }
 
 .modal-form-button {
